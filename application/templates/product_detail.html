@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ product.name }} Detail</title>
+    <style>
+        .price-container {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ product.name }}
+    </h1>
+    <p>Description:</p>
+    <ul>
+        {% for line in product.description.split('\n') %}
+        <li>{{ line }}</li>
+        {% endfor %}
+    </ul>
+
+
+
+    <button onclick="togglePrice()">Price</button>
+    <div id="price" class="price-container">
+        <p>Price: {{ product.price }}</p>
+    </div>
+    
+
+    <script>
+        function togglePrice() {
+            var priceContainer = document.getElementById("price");
+            if (priceContainer.style.display === "none") {
+                priceContainer.style.display = "block";
+            } else {
+                priceContainer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
