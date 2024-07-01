@@ -1,4 +1,4 @@
-This is a cart application with three pages. The first page contains thel ist of 20 products to look out for, from amazon and flipkart.
+    ffThis is a cart application with three pages. The first page contains thel ist of 20 products to look out for, from amazon and flipkart.
 
 Libraries used: blinker==1.7.0 click==8.1.7 colorama==0.4.6 Flask==3.0.2 itsdangerous==2.1.2 Jinja2==3.1.3 MarkupSafe==2.1.5 Werkzeug==3.0.1
 
